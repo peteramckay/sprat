@@ -1,8 +1,8 @@
 #Software License
 
-Tiki is free to use under MIT license, as is all third-party software included with Beams unless otherwise noted.
+Sprat is free to use under MIT license, as is all third-party software included with Sprat unless otherwise noted.
 
-The full Beams license follows:
+The full Sprat license follows:
 
 ====
 

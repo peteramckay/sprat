@@ -1,3 +1,3 @@
-#Tiki
+#Sprat
 
 A microservices server project. Just getting started... 
