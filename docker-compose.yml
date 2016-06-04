@@ -1,4 +1,4 @@
-# Tiki
+# Sprat
 # Copyright (c) 2016 Peter McKay
 # Free to use under the MIT license.
 
@@ -7,15 +7,15 @@ version: '2'
 
 services:
   
-  beams: 
+#  sprat: 
 
 
-  api_gateway:
-    build: ./api_gateway
-    pid: "host"
-    ports:
-      - "443:443"
-      - "80:80"
+#  api_gateway:
+#    build: ./api_gateway
+#    pid: "host"
+#    ports:
+#      - "443:443"
+#      - "80:80"
 
 #  ui_web:
 #    build: ./ui_web
