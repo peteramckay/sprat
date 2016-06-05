@@ -1,3 +1,3 @@
 #Sprat
 
-A microservices server project. Just getting started... 
+A microservices framework for independent publishing.
