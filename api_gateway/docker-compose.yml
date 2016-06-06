@@ -7,17 +7,17 @@ version: '2'
 services:
 
   analytics:
-    build: ./analytics
+    build: ../analytics
     ports: 
       - "8008:8008"
     
   cms: 
-    build: ./cms
+    build: ../cms
     ports: 
       - "1337:1337"
 
   ui_web:
-    build: ./ui_web
+    build: ../ui_web
     ports: 
       - "8080:8080"
     links: 
