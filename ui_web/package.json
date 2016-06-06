@@ -1,0 +1,16 @@
+{
+  "name": "ui_web",
+  "version": "0.1.0",
+  "description": "Sprat Web UI",
+  "author": "Peter McKay <peteramckay@gmail.com>",
+  "main": "ui_web.js",
+  "scripts": 
+      {
+        "start": "node ui_web.js"
+      },
+
+  "dependencies": {
+    "express": "^4.13.3" 
+    }
+   
+}
