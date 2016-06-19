@@ -1,0 +1,14 @@
+# Sprat
+# Copyright (c) 2016 Peter McKay
+# Free to use under the MIT license
+
+server {
+	listen 90;
+	listen [::]:90;
+	root /var/www/analytics/;
+	index index.html;
+	server_name _;
+	location / {
+           try_files $uri $uri/ =404;
+	    }
+  }

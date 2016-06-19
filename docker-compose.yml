@@ -6,20 +6,38 @@ version: '2'
 
 services:
 
+  analytics_db:
+    build: 
+      context: ./analytics_db
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
   analytics:
-    build: ./analytics
+    build: 
+      context: ./analytics
     ports: 
-      - "8008:8008"
+      - "90:90"
+    links: 
+      - analytics_db
     
+  cms_db: 
+    build: 
+      context: ./cms_db
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
   cms: 
-    build: ./cms
+    build: 
+      context: ./cms
     ports: 
       - "1337:1337"
-
+    links: 
+      - cms_db
+      
   ui_web:
-    build: ./ui_web
+    build: 
+      context: ./ui_web
     ports: 
       - "8080:8080"
     links: 
       - cms
-      - analytics

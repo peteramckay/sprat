@@ -1,0 +1,14 @@
+# Sprat
+# Copyright (c) 2016 Peter McKay
+# Free to use under the MIT license
+
+server {
+	listen 8080;
+	listen [::]:8080;
+	root /var/www/ui_web/;
+	index index.html;
+	server_name _;
+	location / {
+           try_files $uri $uri/ =404;
+	    }
+  }

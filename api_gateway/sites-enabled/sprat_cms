@@ -1,0 +1,14 @@
+# Sprat
+# Copyright (c) 2016 Peter McKay
+# Free to use under the MIT license
+
+server {
+	listen 1337;
+	listen [::]:1337;
+	root /var/www/cms/;
+	index index.html;
+	server_name _;
+	location / {
+           try_files $uri $uri/ =404;
+	    }
+  }
